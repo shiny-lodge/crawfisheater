@@ -1,0 +1,25 @@
+.page {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 0;
+  height: 3000px;
+  background: url(../depositphotos_273602510-stock-illustration-lobster-pattern-vector.jpg);
+  background-repeat: repeat;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.tracker {
+  background-color: #fff;
+  font-size: 40px;
+  margin: 20px auto;
+}
