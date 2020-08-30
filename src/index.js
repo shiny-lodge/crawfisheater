@@ -1,8 +1,8 @@
-import "./styles.css";
-
 var trackerX = document.querySelector(".trackerx");
 var trackerY = document.querySelector(".trackery");
-var backing = document.querySelector(".page");
+var backclose = document.querySelector(".background");
+var backmid = document.querySelector(".background-mid");
+var backfar = document.querySelector(".page");
 
 function mouse_position() {
   var e = window.event;
@@ -12,8 +12,12 @@ function mouse_position() {
 
   trackerX.textContent = `posX: ${posX}`;
   trackerY.textContent = `posY: ${posY}`;
-  backing.style.backgroundPositionY = `-${posY}px`;
-  backing.style.backgroundPositionX = `-${posX}px`;
+  backfar.style.backgroundPositionY = `-${posY*0.3}px`;
+  backfar.style.backgroundPositionX = `-${posX*0.3}px`;
+  backmid.style.backgroundPositionY = `-${posY*0.7}px`;
+  backmid.style.backgroundPositionX = `-${posX*0.7}px`;
+  backclose.style.backgroundPositionY = `-${posY}px`;
+  backclose.style.backgroundPositionX = `-${posX}px`;
 }
 
 document.addEventListener("mousemove", mouse_position);
