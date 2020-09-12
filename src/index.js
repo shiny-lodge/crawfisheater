@@ -10,14 +10,18 @@ function mouse_position() {
   var posX = e.clientX;
   var posY = e.clientY;
 
+  const speedLayerTop = 0.5;
+  const speedLayerMid = speedLayerTop * 0.7;
+  const speedLayerBottom = speedLayerTop * 0.3;
+
   trackerX.textContent = `posX: ${posX}`;
   trackerY.textContent = `posY: ${posY}`;
-  backfar.style.backgroundPositionY = `-${posY*0.3}px`;
-  backfar.style.backgroundPositionX = `-${posX*0.3}px`;
-  backmid.style.backgroundPositionY = `-${posY*0.7}px`;
-  backmid.style.backgroundPositionX = `-${posX*0.7}px`;
-  backclose.style.backgroundPositionY = `-${posY}px`;
-  backclose.style.backgroundPositionX = `-${posX}px`;
+  backfar.style.backgroundPositionY = `-${posY*speedLayerBottom}px`;
+  backfar.style.backgroundPositionX = `-${posX*speedLayerBottom}px`;
+  backmid.style.backgroundPositionY = `-${posY*speedLayerMid}px`;
+  backmid.style.backgroundPositionX = `-${posX*speedLayerMid}px`;
+  backclose.style.backgroundPositionY = `-${posY*speedLayerTop}px`;
+  backclose.style.backgroundPositionX = `-${posX*speedLayerTop}px`;
 }
 
 document.addEventListener("mousemove", mouse_position);
