@@ -1,0 +1,10 @@
+@import url('./__layer-bottom/background__layer-bottom.css');
+@import url('./__layer-mid/background__layer-mid.css');
+@import url('./__layer-top/background__top-layer.css');
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(to left, #73ffde, #fdfd96, #ffd1dc);
+}

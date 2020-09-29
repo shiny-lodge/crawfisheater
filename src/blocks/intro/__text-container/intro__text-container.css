@@ -1,0 +1,8 @@
+.intro__text-container {
+    background: linear-gradient(to right, #ecfefa, #ffffe0, #f6f2f2);
+    opacity: 0.9;
+    margin-left: 24px;
+    padding: 12px 24px;
+    width: 70%;
+    min-height: 480px;
+}

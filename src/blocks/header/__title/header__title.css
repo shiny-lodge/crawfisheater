@@ -1,0 +1,7 @@
+.header__title {
+    font-size: 76px;
+    line-height: 1.2;
+    user-select: none;
+    text-shadow: 2px 2px 0 salmon, 4px 4px 0 aquamarine;
+    opacity: 1;
+  }
