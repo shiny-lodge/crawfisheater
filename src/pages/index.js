@@ -1,4 +1,5 @@
 //import
+import './index.css';
 import Parallax from "../components/Parallax.js";
 import * as funcs from "../utils/functions.js";
 import * as consts from "../utils/consts.js";

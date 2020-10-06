@@ -1,6 +1,7 @@
 @import url('./__image/intro__image.css');
 @import url('./__text-container/intro__text-container.css');
 @import url('./__text/intro__text.css');
+@import url('./__text-span/intro__text-span.css');
 
 .intro {
     margin: 48px auto 0;
